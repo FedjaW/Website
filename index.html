@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Friedrich Wilms</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Reenie+Beanie"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/884fb261de.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="portfolio">
+          <h4 class="portfolio__text">PORTFOLIO</h4>
+        </div>
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link" onclick="closeNav()">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link" onclick="closeNav()">Work</a>
+          </li>
+          <li class="nav__item">
+            <a href="#pathway" class="nav__link" onclick="closeNav()"
+              >Pathway</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link" onclick="closeNav()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <div class="social-menu">
+        <ul class="social-list">
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.instagram.com/fedjaw"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.twitter.com/"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.youtube.com"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li class="social-item">
+            <a
+              class="social-link"
+              href="https://www.linkedin.com"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="me-pic">
+        <img src="img/me-pic2.jpg" alt="Avatar" class="intro__img" />
+      </div>
+
+      <h1 class="section__title--intro">
+        Hi, my name is
+        <!-- <h1 class="section__title section__title--intro--friedrich"> -->
+        <strong>Friedrich...</strong>
+        <!-- </h1> -->
+      </h1>
+    </section>
+
+    <section class="work" id="work"></section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
