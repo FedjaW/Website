@@ -7,6 +7,7 @@
   --ff-primary: sans-serif;
   --ff-secondary: monospace;
 
+  --fw-small: 200;
   --fw-reg: 300;
   --fw-bold: 900;
 
@@ -18,6 +19,7 @@
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
+  --fs-mobile: 0.5rem;
 }
 
 @media (min-width: 800px) {
@@ -358,12 +360,13 @@ i {
 @media (max-width: 750px) {
   img {
     width: 50%;
-    min-width: 300px;
+    min-width: 200px;
+    max-width: 250px;
   }
   .intro {
     background-color: #364761;
     grid-template-columns: 1fr;
-    grid-template-rows: 40% 20% 40%;
+    grid-template-rows: 35% 15% 50%;
   }
   .me-pic {
     grid-row-start: 1;
@@ -375,15 +378,21 @@ i {
     justify-content: center;
   }
   .section__title--intro {
+    margin: 0 0 0 0;
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
     align-self: center;
     text-align: center;
+    justify-self: center;
+    font-weight: var(--fw-small);
+    font-size: var(--fs-h2);
+
     /* TODO: Make font size smaller! (here) */
   }
   .social-menu {
+    width: 100%;
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -393,7 +402,52 @@ i {
   }
   .social-list {
     display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
     background-color: #364761;
+    /* justify-items: center;
+    align-items: center; */
+  }
+  .instagram {
+    align-self: center;
+    justify-self: self-end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .twitter {
+    align-self: center;
+    justify-self: self-start;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .youtube {
+    align-self: center;
+    justify-self: self-end;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .linkedin {
+    align-self: center;
+    justify-self: self-start;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .social-item {
+    width: 13vw;
+    height: 13vw;
+    border: 4px solid white;
+  }
+  i {
+    color: white;
+    font-size: 7vw;
   }
 }
 
