@@ -451,11 +451,14 @@ i {
   grid-column-start: 1;
   grid-column-end: 2;
   justify-self: flex-start;
-  align-self: center;
+  align-self: flex-end;
+  font-size: var(--fs-h2);
+  padding-left: 4%;
 }
 
 .work_bottom-layer-background {
-  background-color: #365e61;
+  background-color: #00a187;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -463,9 +466,8 @@ i {
   justify-self: center;
   align-self: center;
   width: 54%;
-  height: 60%;
+  height: 75%;
   border-radius: 25px;
-  /* z-index: 0; */
 }
 
 .work__projects {
@@ -492,7 +494,7 @@ i {
   justify-self: flex-end;
   align-self: center;
   border-left: 3px dashed red;
-  height: 80%;
+  height: 90%;
   padding-right: 5%;
 }
 
@@ -501,8 +503,10 @@ i {
   grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
-  justify-self: flex-start;
-  align-self: center;
+  justify-self: flex-end;
+  align-self: flex-start;
+  padding-right: 10%;
+  font-style: italic;
 }
 
 .work__projects-list {
@@ -523,6 +527,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border-radius: 25px;
   color: white;
   font-size: var(--fs-h3);
@@ -534,6 +539,11 @@ i {
   width: 25%;
   height: 100%;
   border-radius: 25px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.project-1:hover {
+  background-color: darkred;
 }
 
 .project-2 {
@@ -541,6 +551,11 @@ i {
   width: 25%;
   height: 100%;
   border-radius: 25px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.project-2:hover {
+  background-color: darkred;
 }
 
 .project-3 {
@@ -548,4 +563,15 @@ i {
   width: 25%;
   height: 100%;
   border-radius: 25px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.project-3:hover {
+  background-color: darkred;
+}
+
+@media (max-width: 750px) {
+  .work {
+    background-color: rgb(255, 217, 160);
+  }
 }
