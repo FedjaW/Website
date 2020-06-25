@@ -259,7 +259,7 @@ a:hover {
 
 .intro {
   padding-top: 10vh;
-  height: 100vh;
+  height: 1000px;
   background-color: #364761;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1125,4 +1125,13 @@ i {
   background-color: red;
   width: 40px;
   height: 30%;
+}
+
+@media (max-width: 750px) {
+  .contact {
+    padding-top: 10vh;
+    height: 100vh;
+    background: red;
+    display: flex;
+  }
 }
