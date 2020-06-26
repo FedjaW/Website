@@ -259,7 +259,7 @@ a:hover {
 
 .intro {
   padding-top: 10vh;
-  height: 100vh;
+  height: 1000px;
   background-color: #364761;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
