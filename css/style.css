@@ -578,6 +578,9 @@ i {
 }
 
 @media (max-width: 750px) {
+  .work {
+    background-image: linear-gradient(#364761 0%, rgb(232, 241, 255) 13%);
+  }
   .work__love {
     padding-right: 0;
     margin-left: 2%;
@@ -828,7 +831,10 @@ i {
 
 @media (max-width: 750px) {
   .pathway {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+
+    background-image: linear-gradient(rgb(232, 241, 255) 0%, white 15%);
+
     grid-template-columns: 10% 90%;
     grid-template-rows: 10% 20% 20% 20% 20% 10%;
     /* gap: 20px; */
@@ -1070,7 +1076,7 @@ i {
 /* ------------------------- contact page ------------------------- */
 .contact {
   padding-top: 10vh;
-  height: 100vh;
+  height: 97vh;
   background: linear-gradient(
     to right,
     cornflowerblue 0%,
@@ -1084,7 +1090,16 @@ i {
 .left-half {
   background-color: cornflowerblue;
   width: 65vw;
+  display: flex;
+  flex-direction: column;
 }
+
+.send-me-a-mail-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: blueviolet;
+}
+
 .right-half {
   background-color: white;
   width: 35vw;
@@ -1125,4 +1140,59 @@ i {
   background-color: red;
   width: 40px;
   height: 30%;
+}
+
+.footer-section {
+  background-color: #364761;
+  height: 3vh;
+  display: flex;
+  align-content: center;
+  color: white;
+}
+
+.footer {
+  align-self: center;
+  text-align: center;
+  width: 100vw;
+  margin: 0 0 0 0;
+  background-color: brown;
+}
+
+.contact-header-mobile {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .contact {
+    padding-top: 10vh;
+    height: 97vh;
+    display: flex;
+    /* background: rgb(80, 130, 221); */
+    background-image: linear-gradient(white 0%, rgb(80, 130, 221) 10%);
+    /* background: linear-gradient(rgb(237, 100, 100), rgb(72, 192, 35)); */
+    flex-direction: column;
+  }
+
+  .left-half {
+    background-color: rgb(80, 130, 221);
+    height: 50vh;
+    width: 100vw;
+  }
+  .right-half {
+    background-color: white;
+    height: 50vh;
+    width: 100vw;
+  }
+
+  .contact-header,
+  .me-header {
+    display: none;
+  }
+
+  .contact-header-mobile {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+  }
 }
