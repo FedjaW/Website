@@ -403,6 +403,12 @@ i {
 
 /* scroll down animation (arrow) */
 
+.arrow-button {
+  background-color: #364761;
+  cursor: pointer;
+  border: none;
+}
+
 .animated {
   /* background-color: red; */
   width: 30px;
@@ -1378,6 +1384,13 @@ i {
     max-width: 100%;
     text-align: center;
   }
+
+  .send-me-a-mail-text-full {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+
   .fa-envelope {
     font-size: 10vw;
   }
